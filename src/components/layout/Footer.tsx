@@ -4,11 +4,11 @@ import logo from '/images/logo.svg'
 export default function Footer() {
   return (
     <footer className="bg-forest-dark text-gray-300">
-      <div className="mx-auto max-w-7xl px-4 py-12">
-        <div className="grid gap-8 md:grid-cols-3">
+      <div className="mx-auto max-w-7xl px-4 py-8 md:py-12">
+        <div className="grid gap-8 text-center md:text-left md:grid-cols-3">
           {/* Brand */}
           <div>
-            <img src={logo} alt="Lone Wolf Septic and Drains" className="h-28" />
+            <img src={logo} alt="Lone Wolf Septic and Drains" className="mx-auto h-16 md:mx-0 md:h-28" />
             <p className="mt-2 text-sm">
               Professional septic services you can count on. Locally owned and operated.
             </p>

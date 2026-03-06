@@ -1,7 +1,7 @@
 export default function About() {
   return (
-    <div className="mx-auto max-w-4xl px-4 py-16">
-      <h1 className="text-4xl font-bold text-gray-800">About Lone Wolf Septic and Drains</h1>
+    <div className="mx-auto max-w-4xl px-4 py-10 md:py-16">
+      <h1 className="text-3xl font-bold text-gray-800 md:text-4xl">About Lone Wolf Septic and Drains</h1>
 
       <div className="mt-8 space-y-6 text-gray-600 leading-relaxed">
         <p>
