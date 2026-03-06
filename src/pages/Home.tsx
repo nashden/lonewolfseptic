@@ -5,20 +5,27 @@ export default function Home() {
     <>
       {/* Hero */}
       <section className="bg-forest-dark px-4 py-14 text-center text-white md:py-24">
-        <h1 className="text-3xl font-bold md:text-5xl">
-          Your Septic System Deserves<br className="hidden md:block" />
+        {/* Mobile heading */}
+        <h1 className="text-3xl font-bold md:hidden">
+          Septic Done Right.<br />
+          <span className="text-earth-light">Every Time.</span>
+        </h1>
+        <p className="mx-auto mt-3 max-w-xs text-base text-gray-300 md:hidden">
+          Licensed pros. Honest pricing. Trusted by your neighbors.
+        </p>
+
+        {/* Desktop heading */}
+        <h1 className="hidden text-5xl font-bold md:block">
+          Your Septic System Deserves<br />
           <span className="text-earth-light">the Right Team Behind It</span>
         </h1>
-        <p className="mx-auto mt-4 max-w-2xl text-base text-gray-300 md:text-lg">
+        <p className="mx-auto mt-4 hidden max-w-2xl text-lg text-gray-300 md:block">
           Licensed. Insured. Locally trusted. From routine pumping to emergency
           repairs, Lone Wolf Septic and Drains keeps your home protected — done
           right the first time, every time.
         </p>
-        <div className="mt-8 flex flex-col items-center gap-3 sm:flex-row sm:justify-center sm:gap-4">
+        <div className="mt-8">
           <Button to="/contact">Get Your Free Quote Today</Button>
-          <Button to="/services" variant="secondary">
-            Our Services
-          </Button>
         </div>
       </section>
 
@@ -109,28 +116,30 @@ export default function Home() {
           </p>
 
           {/* Featured services */}
-          <div className="mt-8 grid gap-4 sm:grid-cols-2 md:mt-12 md:gap-5">
-            <div className="rounded-2xl bg-forest-dark px-6 py-6 text-white md:px-8 md:py-8">
-              <svg className="h-8 w-8 text-earth-light md:h-10 md:w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+          <div className="mt-8 grid grid-cols-2 gap-3 md:mt-12 md:gap-5">
+            <div className="rounded-xl bg-forest-dark px-4 py-4 text-white md:rounded-2xl md:px-8 md:py-8">
+              <svg className="hidden h-10 w-10 text-earth-light md:block" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M12 3v1.5M12 19.5V21M4.219 4.219l1.061 1.061M17.72 17.72l1.06 1.06M3 12h1.5M19.5 12H21M4.219 19.781l1.061-1.061M17.72 6.28l1.06-1.06" />
                 <path strokeLinecap="round" strokeLinejoin="round" d="M12 9a3 3 0 100 6 3 3 0 000-6z" />
                 <path strokeLinecap="round" strokeLinejoin="round" d="M8 16l-1.5 4h11L16 16" />
               </svg>
-              <h3 className="mt-3 text-lg font-bold md:mt-4 md:text-2xl">Septic Tank Pumping</h3>
-              <p className="mt-2 text-sm leading-relaxed text-gray-300 md:mt-3 md:text-base">
-                The most important thing you can do for your septic system.
+              <h3 className="text-base font-bold md:mt-4 md:text-2xl">Septic Tank Pumping</h3>
+              <p className="mt-1 text-xs leading-relaxed text-gray-300 md:mt-3 md:text-base">
+                <span className="md:hidden">Regular pump-outs every 3–5 years keep your system healthy.</span>
+                <span className="hidden md:inline">The most important thing you can do for your septic system.
                 Regular pump-outs every 3–5 years prevent costly backups and
-                extend the life of your system by decades.
+                extend the life of your system by decades.</span>
               </p>
             </div>
-            <div className="rounded-2xl bg-earth-light px-6 py-6 text-white md:px-8 md:py-8">
-              <svg className="h-8 w-8 text-white md:h-10 md:w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+            <div className="rounded-xl bg-earth-light px-4 py-4 text-white md:rounded-2xl md:px-8 md:py-8">
+              <svg className="hidden h-10 w-10 text-white md:block" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0" />
               </svg>
-              <h3 className="mt-3 text-lg font-bold md:mt-4 md:text-2xl">24/7 Emergencies</h3>
-              <p className="mt-2 text-sm leading-relaxed text-white/85 md:mt-3 md:text-base">
-                Sewage backup? Overflow? Strange smells? Don't wait — call us
-                any time, day or night. We respond fast so the damage stays small.
+              <h3 className="text-base font-bold md:mt-4 md:text-2xl">24/7 Emergencies</h3>
+              <p className="mt-1 text-xs leading-relaxed text-white/85 md:mt-3 md:text-base">
+                <span className="md:hidden">Call us any time, day or night. We respond fast.</span>
+                <span className="hidden md:inline">Sewage backup? Overflow? Strange smells? Don't wait — call us
+                any time, day or night. We respond fast so the damage stays small.</span>
               </p>
             </div>
           </div>
