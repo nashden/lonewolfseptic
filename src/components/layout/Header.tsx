@@ -15,7 +15,7 @@ export default function Header() {
     <header className="sticky top-0 z-50 bg-forest-dark text-white shadow-lg">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-1 md:py-0">
         <Link to="/">
-          <img src={logo} alt="Lone Wolf Septic and Drains" className="h-14 md:h-32 md:-my-4" />
+          <img src={logo} alt="Lone Wolf Septic and Drains" className="h-20 md:h-32 md:-my-4" />
         </Link>
 
         {/* Desktop nav */}
