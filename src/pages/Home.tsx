@@ -11,7 +11,7 @@ export default function Home() {
         </h1>
         <p className="mx-auto mt-4 max-w-2xl text-lg text-gray-300">
           From installations to routine pumping and emergency repairs — Lone Wolf
-          Septic keeps your system running right.
+          Septic and Drains keeps your system running right.
         </p>
         <div className="mt-8 flex justify-center gap-4">
           <Button to="/contact">Get a Free Quote</Button>
@@ -24,7 +24,7 @@ export default function Home() {
       {/* Why Choose Us */}
       <section className="mx-auto max-w-7xl px-4 py-16">
         <h2 className="text-center text-3xl font-bold text-gray-800">
-          Why Choose Lone Wolf Septic?
+          Why Choose Lone Wolf Septic and Drains?
         </h2>
         <div className="mt-10 grid gap-8 md:grid-cols-3">
           {[

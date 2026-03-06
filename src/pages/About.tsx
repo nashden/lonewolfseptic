@@ -1,11 +1,11 @@
 export default function About() {
   return (
     <div className="mx-auto max-w-4xl px-4 py-16">
-      <h1 className="text-4xl font-bold text-gray-800">About Lone Wolf Septic</h1>
+      <h1 className="text-4xl font-bold text-gray-800">About Lone Wolf Septic and Drains</h1>
 
       <div className="mt-8 space-y-6 text-gray-600 leading-relaxed">
         <p>
-          Lone Wolf Septic was founded with a simple mission: deliver honest,
+          Lone Wolf Septic and Drains was founded with a simple mission: deliver honest,
           dependable septic services at fair prices. What started as a one-truck
           operation has grown into a trusted name in the community — but our
           values haven't changed.

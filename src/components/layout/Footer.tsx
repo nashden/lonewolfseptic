@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import logo from '/images/logo.png'
 
 export default function Footer() {
   return (
@@ -7,9 +8,7 @@ export default function Footer() {
         <div className="grid gap-8 md:grid-cols-3">
           {/* Brand */}
           <div>
-            <h3 className="text-lg font-bold text-white">
-              <span className="text-earth-light">Lone Wolf</span> Septic
-            </h3>
+            <img src={logo} alt="Lone Wolf Septic and Drains" className="h-28" />
             <p className="mt-2 text-sm">
               Professional septic services you can count on. Locally owned and operated.
             </p>
@@ -38,7 +37,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-8 border-t border-forest pt-6 text-center text-sm">
-          &copy; {new Date().getFullYear()} Lone Wolf Septic. All rights reserved.
+          &copy; {new Date().getFullYear()} Lone Wolf Septic and Drains. All rights reserved.
         </div>
       </div>
     </footer>

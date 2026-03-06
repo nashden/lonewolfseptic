@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
+import logo from '/images/logo.png'
 
 const navLinks = [
   { to: '/', label: 'Home' },
@@ -14,8 +15,8 @@ export default function Header() {
   return (
     <header className="bg-forest-dark text-white shadow-lg">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4">
-        <Link to="/" className="text-2xl font-bold tracking-tight">
-          <span className="text-earth-light">Lone Wolf</span> Septic
+        <Link to="/">
+          <img src={logo} alt="Lone Wolf Septic and Drains" className="h-24" />
         </Link>
 
         {/* Desktop nav */}
