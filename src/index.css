@@ -1,5 +1,14 @@
 @import "tailwindcss";
 
+@keyframes levitate {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+}
+
+.animate-levitate-1 { animation: levitate 5s ease-in-out infinite; }
+.animate-levitate-2 { animation: levitate 5s ease-in-out 1s infinite; }
+.animate-levitate-3 { animation: levitate 5s ease-in-out 2s infinite; }
+
 @theme {
   --color-forest: #0099DC;
   --color-forest-dark: #0063A7;

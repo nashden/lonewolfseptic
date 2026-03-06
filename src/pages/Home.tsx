@@ -23,33 +23,51 @@ export default function Home() {
       </section>
 
       {/* Why Choose Us */}
-      <section className="mx-auto max-w-7xl px-4 py-16">
-        <h2 className="text-center text-3xl font-bold text-gray-800">
+      <section className="mx-auto flex max-w-7xl flex-col justify-center px-4 py-6 md:min-h-[calc(100vh-6rem)]">
+        <h2 className="mb-8 text-center text-3xl font-bold text-gray-800">
           Why Choose Lone Wolf Septic and Drains?
         </h2>
-        <div className="mt-10 grid gap-8 md:grid-cols-3">
-          {[
-            {
-              title: 'Licensed & Insured',
-              desc: 'Fully licensed professionals with comprehensive insurance coverage for your peace of mind.',
-            },
-            {
-              title: '24/7 Emergency Service',
-              desc: 'Septic emergencies don\'t wait — and neither do we. Call us any time, day or night.',
-            },
-            {
-              title: 'Locally Owned',
-              desc: 'We live and work in this community. Your satisfaction is our reputation.',
-            },
-          ].map((item) => (
-            <div
-              key={item.title}
-              className="rounded-xl border border-gray-200 p-6 text-center shadow-sm"
-            >
-              <h3 className="text-xl font-semibold text-forest">{item.title}</h3>
-              <p className="mt-2 text-gray-600">{item.desc}</p>
-            </div>
-          ))}
+        <div className="flex flex-col items-center gap-6 md:flex-row md:items-center md:justify-center">
+          {/* Mascot */}
+          <div className="flex-shrink-0">
+            <img
+              src="/mascot.svg"
+              alt="Lone Wolf mascot"
+              className="w-56 md:w-72"
+            />
+          </div>
+
+          {/* Levitating cards */}
+          <div className="flex flex-col items-center gap-4">
+            {[
+              {
+                title: 'Licensed & Insured',
+                desc: 'Fully licensed professionals with comprehensive insurance coverage.',
+                animation: 'animate-levitate-1',
+                offset: '',
+              },
+              {
+                title: '24/7 Emergency Service',
+                desc: "Septic emergencies don't wait — and neither do we.",
+                animation: 'animate-levitate-2',
+                offset: 'md:ml-16',
+              },
+              {
+                title: 'Locally Owned',
+                desc: 'We live and work in this community. Your satisfaction is our reputation.',
+                animation: 'animate-levitate-3',
+                offset: '',
+              },
+            ].map((item) => (
+              <div
+                key={item.title}
+                className={`max-w-md rounded-xl border border-gray-200 bg-white px-6 py-5 shadow-md ${item.animation} ${item.offset}`}
+              >
+                <h3 className="text-xl font-bold text-forest">{item.title}</h3>
+                <p className="mt-1.5 text-lg text-gray-600">{item.desc}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
