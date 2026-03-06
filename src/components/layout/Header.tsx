@@ -3,7 +3,6 @@ import { Link, NavLink } from 'react-router-dom'
 import logo from '/images/logo.svg'
 
 const navLinks = [
-  { to: '/', label: 'Home' },
   { to: '/about', label: 'About' },
   { to: '/services', label: 'Services' },
   { to: '/contact', label: 'Contact' },
@@ -20,15 +19,16 @@ export default function Header() {
         </Link>
 
         {/* Desktop nav */}
-        <nav className="hidden gap-6 md:flex">
+        <nav className="hidden gap-1 md:flex">
           {navLinks.map((link) => (
             <NavLink
               key={link.to}
               to={link.to}
-              end={link.to === '/'}
               className={({ isActive }) =>
-                `text-sm font-medium transition-colors hover:text-earth-light ${
-                  isActive ? 'text-earth-light' : 'text-gray-200'
+                `rounded-md px-4 py-1.5 text-sm font-bold uppercase tracking-wider transition-colors ${
+                  isActive
+                    ? 'bg-forest text-white'
+                    : 'text-gray-200 hover:bg-white/10 hover:text-earth-light'
                 }`
               }
             >
