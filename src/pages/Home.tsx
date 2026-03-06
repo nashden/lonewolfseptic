@@ -6,15 +6,16 @@ export default function Home() {
       {/* Hero */}
       <section className="bg-forest-dark px-4 py-24 text-center text-white">
         <h1 className="text-4xl font-bold md:text-5xl">
-          Reliable Septic Services <br className="hidden md:block" />
-          <span className="text-earth-light">You Can Trust</span>
+          Your Septic System Deserves<br className="hidden md:block" />
+          <span className="text-earth-light">the Right Team Behind It</span>
         </h1>
         <p className="mx-auto mt-4 max-w-2xl text-lg text-gray-300">
-          From installations to routine pumping and emergency repairs — Lone Wolf
-          Septic and Drains keeps your system running right.
+          Licensed. Insured. Locally trusted. From routine pumping to emergency
+          repairs, Lone Wolf Septic and Drains keeps your home protected — done
+          right the first time, every time.
         </p>
         <div className="mt-8 flex justify-center gap-4">
-          <Button to="/contact">Get a Free Quote</Button>
+          <Button to="/contact">Get Your Free Quote Today</Button>
           <Button to="/services" variant="secondary">
             Our Services
           </Button>
