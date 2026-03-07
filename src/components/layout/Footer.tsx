@@ -36,7 +36,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-8 border-t border-forest pt-6 text-center text-sm">
+        <div className="mt-8 border-t border-white/15 pt-6 text-center text-sm">
           &copy; {new Date().getFullYear()} Lone Wolf Septic and Drains. All rights reserved.
         </div>
       </div>

@@ -34,13 +34,11 @@ export default function Home() {
             Your Septic System Deserves<br />
             <span className="text-earth-light">the Right Team Behind It</span>
           </h1>
-          <p className="mx-auto mt-4 hidden max-w-2xl text-lg text-gray-300 md:block">
-            Licensed. Insured. Locally trusted. From routine pumping to emergency
-            repairs, Lone Wolf Septic and Drains keeps your home protected — done
-            right the first time, every time.
+          <p className="mx-auto mt-4 hidden max-w-2xl text-xl text-gray-300 md:block">
+            Standing apart from the pack by delivering reliable, responsible septic service every time.
           </p>
           <div className="mt-8">
-            <Button to="/contact">Get Your Free Quote Today</Button>
+            <Button to="/contact" variant="secondary">Get Your Free Quote Today</Button>
           </div>
         </div>
       </section>
