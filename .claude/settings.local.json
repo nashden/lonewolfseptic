@@ -6,7 +6,8 @@
       "Bash(rm:*)",
       "Bash(npm run:*)",
       "Bash(node:*)",
-      "Bash(curl:*)"
+      "Bash(curl:*)",
+      "Bash(npx shadcn@latest:*)"
     ]
   }
 }
