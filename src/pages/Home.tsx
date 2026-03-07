@@ -1,5 +1,15 @@
 import { type FormEvent, useState } from 'react'
 import Button from '../components/ui/Button'
+import { Input } from '@/components/ui/input'
+import { Label } from '@/components/ui/label'
+import { Textarea } from '@/components/ui/textarea'
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from '@/components/ui/select'
 
 export default function Home() {
   const [submitted, setSubmitted] = useState(false)
@@ -386,82 +396,81 @@ export default function Home() {
                 <form onSubmit={handleSubmit} className="space-y-3 md:space-y-3">
                   <div className="grid gap-3 md:grid-cols-2 md:gap-3">
                     <div>
-                      <label htmlFor="home-name" className="block text-xs font-semibold text-gray-200">Name</label>
-                      <input
+                      <Label htmlFor="home-name" className="text-xs font-semibold text-gray-200">Name</Label>
+                      <Input
                         type="text"
                         id="home-name"
                         name="name"
                         required
                         placeholder="John Smith"
-                        className="mt-1 w-full rounded-lg border border-white/20 bg-white/10 px-3 py-2 text-sm text-white placeholder-gray-400 focus:border-earth focus:ring-1 focus:ring-earth focus:outline-none"
+                        className="mt-1 border-white/20 bg-white/10 text-white placeholder:text-gray-400 focus-visible:border-earth focus-visible:ring-earth/50"
                       />
                     </div>
                     <div>
-                      <label htmlFor="home-email" className="block text-xs font-semibold text-gray-200">Email</label>
-                      <input
+                      <Label htmlFor="home-email" className="text-xs font-semibold text-gray-200">Email</Label>
+                      <Input
                         type="email"
                         id="home-email"
                         name="email"
                         required
                         placeholder="john@email.com"
-                        className="mt-1 w-full rounded-lg border border-white/20 bg-white/10 px-3 py-2 text-sm text-white placeholder-gray-400 focus:border-earth focus:ring-1 focus:ring-earth focus:outline-none"
+                        className="mt-1 border-white/20 bg-white/10 text-white placeholder:text-gray-400 focus-visible:border-earth focus-visible:ring-earth/50"
                       />
                     </div>
                   </div>
 
                   <div className="grid gap-3 md:grid-cols-2 md:gap-3">
                     <div>
-                      <label htmlFor="home-phone" className="block text-xs font-semibold text-gray-200">Phone</label>
-                      <input
+                      <Label htmlFor="home-phone" className="text-xs font-semibold text-gray-200">Phone</Label>
+                      <Input
                         type="tel"
                         id="home-phone"
                         name="phone"
                         required
                         placeholder="(828) 555-1234"
-                        className="mt-1 w-full rounded-lg border border-white/20 bg-white/10 px-3 py-2 text-sm text-white placeholder-gray-400 focus:border-earth focus:ring-1 focus:ring-earth focus:outline-none"
+                        className="mt-1 border-white/20 bg-white/10 text-white placeholder:text-gray-400 focus-visible:border-earth focus-visible:ring-earth/50"
                       />
                     </div>
                     <div>
-                      <label htmlFor="home-address" className="block text-xs font-semibold text-gray-200">Address</label>
-                      <input
+                      <Label htmlFor="home-address" className="text-xs font-semibold text-gray-200">Address</Label>
+                      <Input
                         type="text"
                         id="home-address"
                         name="address"
                         required
                         placeholder="123 Mountain Rd, Asheville"
-                        className="mt-1 w-full rounded-lg border border-white/20 bg-white/10 px-3 py-2 text-sm text-white placeholder-gray-400 focus:border-earth focus:ring-1 focus:ring-earth focus:outline-none"
+                        className="mt-1 border-white/20 bg-white/10 text-white placeholder:text-gray-400 focus-visible:border-earth focus-visible:ring-earth/50"
                       />
                     </div>
                   </div>
 
                   <div>
-                    <label htmlFor="home-service" className="block text-xs font-semibold text-gray-200">Service Needed</label>
-                    <select
-                      id="home-service"
-                      name="service"
-                      required
-                      className="mt-1 w-full rounded-lg border border-white/20 bg-white/10 px-3 py-2 text-sm text-white focus:border-earth focus:ring-1 focus:ring-earth focus:outline-none"
-                    >
-                      <option value="" className="text-gray-800">Select a service...</option>
-                      <option value="pumping" className="text-gray-800">Septic Tank Pumping</option>
-                      <option value="installation" className="text-gray-800">New System Installation</option>
-                      <option value="inspection" className="text-gray-800">Inspection & Evaluation</option>
-                      <option value="repair" className="text-gray-800">Repairs & Troubleshooting</option>
-                      <option value="drainfield" className="text-gray-800">Drain Field Services</option>
-                      <option value="emergency" className="text-gray-800">Emergency Service</option>
-                    </select>
+                    <Label className="text-xs font-semibold text-gray-200">Service Needed</Label>
+                    <Select name="service" required>
+                      <SelectTrigger className="mt-1 w-full border-white/20 bg-white/10 text-white data-placeholder:text-gray-400 focus-visible:border-earth focus-visible:ring-earth/50">
+                        <SelectValue placeholder="Select a service..." />
+                      </SelectTrigger>
+                      <SelectContent>
+                        <SelectItem value="pumping">Septic Tank Pumping</SelectItem>
+                        <SelectItem value="installation">New System Installation</SelectItem>
+                        <SelectItem value="inspection">Inspection & Evaluation</SelectItem>
+                        <SelectItem value="repair">Repairs & Troubleshooting</SelectItem>
+                        <SelectItem value="drainfield">Drain Field Services</SelectItem>
+                        <SelectItem value="emergency">Emergency Service</SelectItem>
+                      </SelectContent>
+                    </Select>
                   </div>
 
                   <div>
-                    <label htmlFor="home-description" className="block text-xs font-semibold text-gray-200">
+                    <Label htmlFor="home-description" className="text-xs font-semibold text-gray-200">
                       Description <span className="font-normal text-gray-400">(optional)</span>
-                    </label>
-                    <textarea
+                    </Label>
+                    <Textarea
                       id="home-description"
                       name="description"
                       rows={2}
                       placeholder="Tell us a little more about your situation..."
-                      className="mt-1 w-full rounded-lg border border-white/20 bg-white/10 px-3 py-2 text-sm text-white placeholder-gray-400 focus:border-earth focus:ring-1 focus:ring-earth focus:outline-none"
+                      className="mt-1 border-white/20 bg-white/10 text-white placeholder:text-gray-400 focus-visible:border-earth focus-visible:ring-earth/50"
                     />
                   </div>
 
