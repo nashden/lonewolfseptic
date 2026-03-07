@@ -62,7 +62,7 @@ export default function Home() {
         <div className="flex items-center gap-3 md:hidden">
           <div className="flex-shrink-0">
             <img
-              src="/mascot.svg"
+              src="/images/mascot.svg"
               alt="Lone Wolf mascot"
               className="w-44"
             />
@@ -89,7 +89,7 @@ export default function Home() {
         <div className="hidden md:flex md:flex-row md:items-center md:justify-center md:gap-6">
           <div className="flex-shrink-0">
             <img
-              src="/mascot.svg"
+              src="/images/mascot.svg"
               alt="Lone Wolf mascot"
               className="w-72"
             />
@@ -328,48 +328,50 @@ export default function Home() {
       </section>
 
       {/* Contact Form */}
-      <section className="relative overflow-hidden bg-[#012E4F] px-4 py-12 md:py-20">
+      <section className="relative bg-[#012E4F] px-4 py-12 pb-24 md:overflow-hidden md:py-20 md:pb-20">
         <div className="absolute inset-0 bg-gradient-to-br from-[#012E4F] to-forest-dark opacity-90" />
         <div className="relative z-10 mx-auto max-w-5xl">
-          <div className="grid items-center gap-8 md:grid-cols-2 md:gap-12">
-            {/* Left side - messaging */}
-            <div className="text-center md:text-left">
-              <h2 className="font-heading text-xl font-bold text-white md:text-4xl">
-                Ready to Get <span className="text-earth">Started?</span>
-              </h2>
-              <p className="mt-2 text-sm text-gray-300 md:mt-4 md:text-lg">
-                Whether it's routine maintenance or an urgent issue, we're here to help. Fill out the form and our team will reach out within 24 hours.
-              </p>
-              <div className="mt-5 flex flex-wrap justify-center gap-x-5 gap-y-3 md:mt-8 md:flex-col md:justify-start md:gap-4">
-                <div className="flex items-center gap-2 md:gap-3">
-                  <div className="flex h-7 w-7 items-center justify-center rounded-full bg-earth/20 md:h-10 md:w-10">
-                    <svg className="h-3.5 w-3.5 text-earth md:h-5 md:w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-                    </svg>
-                  </div>
-                  <span className="text-xs text-gray-200 md:text-base">Free estimates</span>
+          {/* Header */}
+          <div className="mb-6 text-center md:mb-10">
+            <h2 className="font-heading text-xl font-bold text-white md:text-4xl">
+              Ready to Get <span className="text-earth">Started?</span>
+            </h2>
+            <p className="mt-1 text-sm text-gray-300 md:mt-2 md:text-lg">
+              Let the wolf work for you. Fill out the form and our team will reach out within 24 hours.
+            </p>
+            <div className="mt-3 flex flex-wrap justify-center gap-x-5 gap-y-2 md:mt-5 md:gap-x-6">
+              <div className="flex items-center gap-2">
+                <div className="flex h-6 w-6 items-center justify-center rounded-full bg-earth/20 md:h-8 md:w-8">
+                  <svg className="h-3 w-3 text-earth md:h-4 md:w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                  </svg>
                 </div>
-                <div className="flex items-center gap-2 md:gap-3">
-                  <div className="flex h-7 w-7 items-center justify-center rounded-full bg-earth/20 md:h-10 md:w-10">
-                    <svg className="h-3.5 w-3.5 text-earth md:h-5 md:w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-                    </svg>
-                  </div>
-                  <span className="text-xs text-gray-200 md:text-base">24hr response</span>
+                <span className="text-xs text-gray-200 md:text-sm">Free estimates — no obligation</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <div className="flex h-6 w-6 items-center justify-center rounded-full bg-earth/20 md:h-8 md:w-8">
+                  <svg className="h-3 w-3 text-earth md:h-4 md:w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                  </svg>
                 </div>
-                <div className="flex items-center gap-2 md:gap-3">
-                  <div className="flex h-7 w-7 items-center justify-center rounded-full bg-earth/20 md:h-10 md:w-10">
-                    <svg className="h-3.5 w-3.5 text-earth md:h-5 md:w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-                    </svg>
-                  </div>
-                  <span className="text-xs text-gray-200 md:text-base">Licensed & insured</span>
+                <span className="text-xs text-gray-200 md:text-sm">Response within 24 hours</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <div className="flex h-6 w-6 items-center justify-center rounded-full bg-earth/20 md:h-8 md:w-8">
+                  <svg className="h-3 w-3 text-earth md:h-4 md:w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                  </svg>
                 </div>
+                <span className="text-xs text-gray-200 md:text-sm">Licensed & insured professionals</span>
               </div>
             </div>
+          </div>
 
-            {/* Right side - form */}
-            <div className="rounded-xl bg-white/10 px-4 py-6 shadow-2xl backdrop-blur-sm border border-white/10 md:rounded-2xl md:px-8 md:py-10">
+          {/* Form + Mascot */}
+          <div className="flex items-start justify-center gap-0 md:gap-6 lg:gap-10">
+            {/* Form */}
+            <div className="w-full max-w-lg">
+              <div className="rounded-xl bg-white/10 px-4 py-5 shadow-2xl backdrop-blur-sm border border-white/10 md:rounded-2xl md:px-6 md:py-7">
               {submitted ? (
                 <div className="py-8 text-center">
                   <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-earth/20">
@@ -381,64 +383,64 @@ export default function Home() {
                   <p className="mt-2 text-gray-300">We've received your request and will get back to you within 24 hours.</p>
                 </div>
               ) : (
-                <form onSubmit={handleSubmit} className="space-y-3 md:space-y-4">
-                  <div className="grid gap-3 md:grid-cols-2 md:gap-4">
+                <form onSubmit={handleSubmit} className="space-y-3 md:space-y-3">
+                  <div className="grid gap-3 md:grid-cols-2 md:gap-3">
                     <div>
-                      <label htmlFor="home-name" className="block text-xs font-semibold text-gray-200 md:text-sm">Name</label>
+                      <label htmlFor="home-name" className="block text-xs font-semibold text-gray-200">Name</label>
                       <input
                         type="text"
                         id="home-name"
                         name="name"
                         required
                         placeholder="John Smith"
-                        className="mt-1 w-full rounded-lg border border-white/20 bg-white/10 px-3 py-2 text-sm text-white placeholder-gray-400 focus:border-earth focus:ring-1 focus:ring-earth focus:outline-none md:px-4 md:py-2.5 md:text-base"
+                        className="mt-1 w-full rounded-lg border border-white/20 bg-white/10 px-3 py-2 text-sm text-white placeholder-gray-400 focus:border-earth focus:ring-1 focus:ring-earth focus:outline-none"
                       />
                     </div>
                     <div>
-                      <label htmlFor="home-email" className="block text-xs font-semibold text-gray-200 md:text-sm">Email</label>
+                      <label htmlFor="home-email" className="block text-xs font-semibold text-gray-200">Email</label>
                       <input
                         type="email"
                         id="home-email"
                         name="email"
                         required
                         placeholder="john@email.com"
-                        className="mt-1 w-full rounded-lg border border-white/20 bg-white/10 px-3 py-2 text-sm text-white placeholder-gray-400 focus:border-earth focus:ring-1 focus:ring-earth focus:outline-none md:px-4 md:py-2.5 md:text-base"
+                        className="mt-1 w-full rounded-lg border border-white/20 bg-white/10 px-3 py-2 text-sm text-white placeholder-gray-400 focus:border-earth focus:ring-1 focus:ring-earth focus:outline-none"
                       />
                     </div>
                   </div>
 
-                  <div className="grid gap-3 md:grid-cols-2 md:gap-4">
+                  <div className="grid gap-3 md:grid-cols-2 md:gap-3">
                     <div>
-                      <label htmlFor="home-phone" className="block text-xs font-semibold text-gray-200 md:text-sm">Phone</label>
+                      <label htmlFor="home-phone" className="block text-xs font-semibold text-gray-200">Phone</label>
                       <input
                         type="tel"
                         id="home-phone"
                         name="phone"
                         required
                         placeholder="(828) 555-1234"
-                        className="mt-1 w-full rounded-lg border border-white/20 bg-white/10 px-3 py-2 text-sm text-white placeholder-gray-400 focus:border-earth focus:ring-1 focus:ring-earth focus:outline-none md:px-4 md:py-2.5 md:text-base"
+                        className="mt-1 w-full rounded-lg border border-white/20 bg-white/10 px-3 py-2 text-sm text-white placeholder-gray-400 focus:border-earth focus:ring-1 focus:ring-earth focus:outline-none"
                       />
                     </div>
                     <div>
-                      <label htmlFor="home-address" className="block text-xs font-semibold text-gray-200 md:text-sm">Address</label>
+                      <label htmlFor="home-address" className="block text-xs font-semibold text-gray-200">Address</label>
                       <input
                         type="text"
                         id="home-address"
                         name="address"
                         required
                         placeholder="123 Mountain Rd, Asheville"
-                        className="mt-1 w-full rounded-lg border border-white/20 bg-white/10 px-3 py-2 text-sm text-white placeholder-gray-400 focus:border-earth focus:ring-1 focus:ring-earth focus:outline-none md:px-4 md:py-2.5 md:text-base"
+                        className="mt-1 w-full rounded-lg border border-white/20 bg-white/10 px-3 py-2 text-sm text-white placeholder-gray-400 focus:border-earth focus:ring-1 focus:ring-earth focus:outline-none"
                       />
                     </div>
                   </div>
 
                   <div>
-                    <label htmlFor="home-service" className="block text-xs font-semibold text-gray-200 md:text-sm">Service Needed</label>
+                    <label htmlFor="home-service" className="block text-xs font-semibold text-gray-200">Service Needed</label>
                     <select
                       id="home-service"
                       name="service"
                       required
-                      className="mt-1 w-full rounded-lg border border-white/20 bg-white/10 px-3 py-2 text-sm text-white focus:border-earth focus:ring-1 focus:ring-earth focus:outline-none md:px-4 md:py-2.5 md:text-base"
+                      className="mt-1 w-full rounded-lg border border-white/20 bg-white/10 px-3 py-2 text-sm text-white focus:border-earth focus:ring-1 focus:ring-earth focus:outline-none"
                     >
                       <option value="" className="text-gray-800">Select a service...</option>
                       <option value="pumping" className="text-gray-800">Septic Tank Pumping</option>
@@ -451,7 +453,7 @@ export default function Home() {
                   </div>
 
                   <div>
-                    <label htmlFor="home-description" className="block text-xs font-semibold text-gray-200 md:text-sm">
+                    <label htmlFor="home-description" className="block text-xs font-semibold text-gray-200">
                       Description <span className="font-normal text-gray-400">(optional)</span>
                     </label>
                     <textarea
@@ -459,14 +461,14 @@ export default function Home() {
                       name="description"
                       rows={2}
                       placeholder="Tell us a little more about your situation..."
-                      className="mt-1 w-full rounded-lg border border-white/20 bg-white/10 px-3 py-2 text-sm text-white placeholder-gray-400 focus:border-earth focus:ring-1 focus:ring-earth focus:outline-none md:px-4 md:py-2.5 md:text-base md:[rows:3]"
+                      className="mt-1 w-full rounded-lg border border-white/20 bg-white/10 px-3 py-2 text-sm text-white placeholder-gray-400 focus:border-earth focus:ring-1 focus:ring-earth focus:outline-none"
                     />
                   </div>
 
-                  <div className="pt-2">
+                  <div className="pt-1">
                     <button
                       type="submit"
-                      className="w-full rounded-lg bg-earth px-6 py-3 font-heading text-sm font-bold uppercase tracking-wide text-white shadow-lg transition-all duration-200 hover:-translate-y-0.5 hover:shadow-xl hover:brightness-110"
+                      className="w-full rounded-lg bg-earth px-6 py-2.5 font-heading text-sm font-bold uppercase tracking-wide text-white shadow-lg transition-all duration-200 hover:-translate-y-0.5 hover:shadow-xl hover:brightness-110"
                     >
                       Get My Free Quote
                     </button>
@@ -475,7 +477,21 @@ export default function Home() {
               )}
             </div>
           </div>
+
+            {/* Mascot */}
+            <img
+              src="/images/mascotpose2.png"
+              alt="Lone Wolf mascot pointing at form"
+              className="hidden w-60 flex-shrink-0 self-center drop-shadow-2xl md:block lg:w-72"
+            />
+          </div>
         </div>
+        {/* Mobile peeking mascot at bottom of section */}
+        <img
+          src="/images/mascotpose3.svg"
+          alt="Lone Wolf mascot peeking"
+          className="absolute bottom-[8px] left-1/2 z-20 w-44 -translate-x-1/2 translate-y-1/3 md:hidden"
+        />
       </section>
     </>
   )
