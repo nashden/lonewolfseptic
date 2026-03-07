@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+body {
+  background-color: #F5F5F5;
+}
+
 @keyframes levitate {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-4px); }
@@ -10,6 +14,8 @@
 .animate-levitate-3 { animation: levitate 5s ease-in-out 2s infinite; }
 
 @theme {
+  --font-heading: 'Montserrat', sans-serif;
+  --font-sans: 'Open Sans', sans-serif;
   --color-forest: #01A3E4;
   --color-forest-dark: #01558B;
   --color-forest-light: #50B8EA;

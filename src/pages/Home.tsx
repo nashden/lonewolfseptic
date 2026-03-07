@@ -21,7 +21,7 @@ export default function Home() {
         {/* Content */}
         <div className="relative z-10 px-4 py-14 md:py-24">
           {/* Mobile heading */}
-          <h1 className="text-3xl font-bold md:hidden">
+          <h1 className="font-heading text-3xl font-bold md:hidden">
             Septic Done Right.<br />
             <span className="text-earth-light">Every Time.</span>
           </h1>
@@ -30,9 +30,9 @@ export default function Home() {
           </p>
 
           {/* Desktop heading */}
-          <h1 className="hidden text-5xl font-bold md:block">
+          <h1 className="hidden font-heading text-5xl font-bold md:block">
             Your Septic System Deserves<br />
-            <span className="text-earth-light">the Right Team Behind It</span>
+            the <span className="text-earth">Right Team Behind It</span>
           </h1>
           <p className="mx-auto mt-4 hidden max-w-2xl text-xl text-gray-300 md:block">
             Standing apart from the pack by delivering reliable, responsible septic service every time.
@@ -45,7 +45,7 @@ export default function Home() {
 
       {/* Why Choose Us */}
       <section className="mx-auto flex max-w-7xl flex-col justify-center px-4 py-12 md:py-6 md:min-h-[calc(100vh-6rem)]">
-        <h2 className="mb-6 text-center text-2xl font-bold text-gray-800 md:mb-8 md:text-3xl">
+        <h2 className="mb-6 text-center font-heading text-2xl font-bold text-gray-800 md:mb-8 md:text-3xl">
           Why Choose Lone Wolf Septic and Drains?
         </h2>
 
@@ -67,9 +67,9 @@ export default function Home() {
             ].map((item) => (
               <div
                 key={item.title}
-                className={`rounded-lg border border-gray-200 bg-white px-3 py-2.5 shadow-md ${item.animation}`}
+                className={`rounded-lg border border-gray-200 bg-gray-50 px-3 py-2.5 shadow-md ${item.animation}`}
               >
-                <h3 className="text-sm font-bold text-forest">{item.title}</h3>
+                <h3 className="font-heading text-sm font-bold text-forest">{item.title}</h3>
                 <p className="mt-0.5 text-xs leading-snug text-gray-600">{item.desc}</p>
               </div>
             ))}
@@ -109,9 +109,9 @@ export default function Home() {
             ].map((item) => (
               <div
                 key={item.title}
-                className={`max-w-md rounded-xl border border-gray-200 bg-white px-6 py-5 shadow-md ${item.animation} ${item.offset}`}
+                className={`max-w-md rounded-xl border border-gray-200 bg-gray-50 px-6 py-5 shadow-md ${item.animation} ${item.offset}`}
               >
-                <h3 className="text-xl font-bold text-forest">{item.title}</h3>
+                <h3 className="font-heading text-xl font-bold text-forest">{item.title}</h3>
                 <p className="mt-1.5 text-lg text-gray-600">{item.desc}</p>
               </div>
             ))}
@@ -120,9 +120,9 @@ export default function Home() {
       </section>
 
       {/* Services */}
-      <section className="bg-gray-50 px-4 py-12 md:py-20">
+      <section className="bg-gray-100 px-4 py-12 md:py-20">
         <div className="mx-auto max-w-5xl">
-          <h2 className="text-center text-2xl font-bold text-gray-800 md:text-3xl">
+          <h2 className="text-center font-heading text-2xl font-bold text-gray-800 md:text-3xl">
             How We Can Help
           </h2>
           <p className="mx-auto mt-3 max-w-xl text-center text-gray-500">
@@ -137,7 +137,7 @@ export default function Home() {
                 <path strokeLinecap="round" strokeLinejoin="round" d="M12 9a3 3 0 100 6 3 3 0 000-6z" />
                 <path strokeLinecap="round" strokeLinejoin="round" d="M8 16l-1.5 4h11L16 16" />
               </svg>
-              <h3 className="text-base font-bold md:mt-4 md:text-2xl">Septic Tank Pumping</h3>
+              <h3 className="font-heading text-base font-bold md:mt-4 md:text-2xl">Septic Tank Pumping</h3>
               <p className="mt-1 text-xs leading-relaxed text-gray-300 md:mt-3 md:text-base">
                 <span className="md:hidden">Regular pump-outs every 3–5 years keep your system healthy.</span>
                 <span className="hidden md:inline">The most important thing you can do for your septic system.
@@ -149,7 +149,7 @@ export default function Home() {
               <svg className="hidden h-10 w-10 text-white md:block" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0" />
               </svg>
-              <h3 className="text-base font-bold md:mt-4 md:text-2xl">24/7 Emergencies</h3>
+              <h3 className="font-heading text-base font-bold md:mt-4 md:text-2xl">24/7 Emergencies</h3>
               <p className="mt-1 text-xs leading-relaxed text-white/85 md:mt-3 md:text-base">
                 <span className="md:hidden">Call us any time, day or night. We respond fast.</span>
                 <span className="hidden md:inline">Sewage backup? Overflow? Strange smells? Don't wait — call us
@@ -200,10 +200,10 @@ export default function Home() {
             ].map((service) => (
               <div
                 key={service.title}
-                className="rounded-xl bg-white px-4 py-4 shadow-sm md:px-5 md:py-5"
+                className="rounded-xl bg-gray-50 px-4 py-4 shadow-sm md:px-5 md:py-5"
               >
                 <div className="hidden md:block">{service.icon}</div>
-                <h3 className="text-sm font-bold text-gray-800 md:mt-3 md:text-base">
+                <h3 className="font-heading text-sm font-bold text-gray-800 md:mt-3 md:text-base">
                   {service.title}
                 </h3>
                 <p className="mt-1 text-xs leading-relaxed text-gray-500 md:mt-1.5 md:text-sm">
