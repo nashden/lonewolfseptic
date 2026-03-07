@@ -12,7 +12,7 @@ export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false)
 
   return (
-    <header className="sticky top-0 z-50 bg-forest-dark text-white shadow-lg">
+    <header className="sticky top-0 z-50 bg-[#1C2833] text-white shadow-lg">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-1 md:py-0">
         <Link to="/">
           <img src={logo} alt="Lone Wolf Septic and Drains" className="h-20 md:h-32 md:-my-4" />
@@ -55,7 +55,7 @@ export default function Header() {
 
       {/* Mobile nav */}
       {menuOpen && (
-        <nav className="border-t border-white/10 bg-forest-dark px-4 py-3 md:hidden">
+        <nav className="border-t border-white/10 bg-[#1C2833] px-4 py-3 md:hidden">
           <div className="flex flex-col gap-1">
             {navLinks.map((link) => (
               <NavLink

@@ -10,9 +10,10 @@
 .animate-levitate-3 { animation: levitate 5s ease-in-out 2s infinite; }
 
 @theme {
-  --color-forest: #0099DC;
-  --color-forest-dark: #0063A7;
-  --color-earth: #d96a00;
-  --color-earth-light: #FC7F07;
+  --color-forest: #01A3E4;
+  --color-forest-dark: #01558B;
+  --color-forest-light: #50B8EA;
+  --color-earth: #F7891D;
+  --color-earth-light: #F7891D;
   --color-slate-warm: #4a5568;
 }

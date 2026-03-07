@@ -3,7 +3,7 @@ import logo from '/images/logo.svg'
 
 export default function Footer() {
   return (
-    <footer className="bg-forest-dark text-gray-300">
+    <footer className="bg-[#1C2833] text-gray-300">
       <div className="mx-auto max-w-7xl px-4 py-8 md:py-12">
         <div className="grid gap-8 text-center md:text-left md:grid-cols-3">
           {/* Brand */}
